@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ilya batarin.</title>
+<meta name="description" content="Ilya Batarin — system engineer & motion designer." />
+<link rel="stylesheet" href="css/style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body class="is-booting">
+
+<div class="backdrop"></div>
+
+<div id="boot" class="boot">
+  <div class="boot__logo">IB</div>
+  <div class="boot__bar"><span id="bootFill"></span></div>
+  <div class="boot__pct" id="bootPct">000</div>
+</div>
+
+<div class="ctl">
+  <button class="ctl__b" id="soundToggle">music off</button>
+  <div class="lang-selector">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+    <button class="lang-btn" data-lang="ja">日本語</button>
+    <button class="lang-btn" data-lang="ko">한국어</button>
+  </div>
+</div>
+
+<main>
+
+<section class="sec hero" id="hero">
+  <img src="assets/el/shape2.png" alt="" class="el el--shape2-hero" data-grain="true" />
+  <img src="assets/el/star_burst.png" alt="" class="el el--star-hero" />
+  <img src="assets/el/orbit_single.png" alt="" class="el el--orbit-hero" />
+  
+  <div class="stage">
+    <h1 class="lay lay--name">ilya</h1>
+    <p class="lay lay--surname">batarin.</p>
+  </div>
+  
+  <div class="phone-stage">
+    <canvas id="phoneCanvas"></canvas>
+  </div>
+</section>
+
+<section class="sec about" id="about">
+  <img src="assets/el/globe.png" alt="" class="el el--globe-about" />
+  <img src="assets/el/logo_shape.png" alt="" class="el el--logo-about" />
+  
+  <div class="stage">
+    <h2 class="lay lay--title">About me</h2>
+    <div class="lay lay--bio">
+      <p data-i18n="about_p1">24 y/o system engineer from Samara, Russia. Working with networks, computers and information security for 1+ year.</p>
+      <p data-i18n="about_p2">Motion design enthusiast since 2019 — After Effects is my creative outlet. I blend technical precision with visual storytelling.</p>
+      <p data-i18n="about_p3">Currently learning Japanese & Korean. Open to remote work worldwide.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec skills" id="skills">
+  <img src="assets/el/data_table.png" alt="" class="el el--data-bg" />
+  
+  <div class="stage">
+    <h2 class="lay lay--title">Skills</h2>
+    <div class="skills-grid lay">
+      <div class="skill-block">
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>Windows Administration</li>
+          <li>Network Configuration</li>
+          <li>PC Diagnostics & Repair</li>
+          <li>Information Security</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <h3>Creative Mode</h3>
+        <ul>
+          <li>After Effects (7 years)</li>
+          <li>Motion Design</li>
+          <li>Animation & VFX</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec experience" id="experience">
+  <img src="assets/el/shape.png" alt="" class="el el--shape-exp" data-grain="true" />
+  <img src="assets/el/star_burst.png" alt="" class="el el--star-exp" />
+  
+  <div class="stage">
+    <h2 class="lay lay--title">Experience</h2>
+    <div class="exp-item lay">
+      <div class="exp-date">Aug 2025 — Present</div>
+      <h3>System Engineer</h3>
+      <p class="exp-company">GKU SO "GUSZN South-West District"</p>
+      <ul class="exp-list">
+        <li data-i18n="job_1">Maintaining printers, scanners, monitors & office equipment</li>
+        <li data-i18n="job_2">Computer hardware repair</li>
+        <li data-i18n="job_3">Local network configuration</li>
+        <li data-i18n="job_4">Setting up new workstations</li>
+        <li data-i18n="job_5">User support & software setup</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <img src="assets/el/orbit_single.png" alt="" class="el el--orbit-contact" />
+  
+  <div class="stage">
+    <h2 class="lay lay--title">contact</h2>
+    <p class="lay lay--me">me.</p>
+    <div class="lay lay--icons">
+      <a href="mailto:nazzzaroffgd@gmail.com">Email</a>
+      <a href="https://t.me/nazzaxdr" target="_blank">Telegram</a>
+    </div>
+    <div class="status-badge lay">
+      <span class="pulse"></span>
+      <span data-i18n="available">Available for remote work</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<audio id="bgAudio" src="assets/123.mp3" loop preload="auto"></audio>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/tv.js" type="module"></script>
+<script src="js/asset-drag.js"></script>
+</body>
+</html>
