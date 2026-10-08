@@ -52,7 +52,7 @@ soundToggle.addEventListener('click', () => {
     soundToggle.textContent = 'music off';
     isMusicPlaying = false;
   } else {
-    bgAudio.volume = 0.2;
+ bgAudio.volume = 0.005;
     bgAudio.play().then(() => {
       soundToggle.textContent = 'music on';
       isMusicPlaying = true;
