@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
       setTimeout(() => {
         boot.classList.add('hidden');
         document.body.classList.remove('is-booting');
-        bgAudio.volume = 0.2;
+        bgAudio.volume = 0.005;
         initAssetTracker();
       }, 500);
     }
